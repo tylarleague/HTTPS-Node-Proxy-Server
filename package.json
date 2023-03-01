@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "description": "Simple Proxy Tools",
   "main": "bin/proxy",
-  "bin": {
+  "scripts": {
+    "start": "nodemon ./proxy.js",
     "proxy": "./bin/proxy.js"
   },
   "author": "1829767182@qq.com",
@@ -14,9 +15,12 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
+    "http-proxy": "^1.18.1",
     "http-proxy-middleware": "^2.0.4",
-    "ini": "^3.0.0"
+    "ini": "^3.0.0",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "eslint": "^8.13.0"
